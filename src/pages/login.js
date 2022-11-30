@@ -112,6 +112,7 @@ function Login({ startLoading, history }) {
               method: "POST",
               headers: {
                 "Content-Type": "application/json; charset=utf8",
+                "Authorization": `Basic ${userName}`,
               },
               body: JSON.stringify({
                 "Token": passwordToken,
